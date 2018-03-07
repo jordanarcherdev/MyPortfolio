@@ -1,0 +1,390 @@
+/* =================================
+  Base Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+img{
+  width: 100%;
+}
+
+.main_content{
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 20%;
+}
+
+.big{
+  font-size: 5em;
+}
+
+.purple{
+  color: purple;
+  font-size: 3em;
+}
+
+#logo{
+  height: 70px;
+}
+
+#logo img{
+  height: 100%;
+}
+
+h1{
+  color: white;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+header{
+  background-color: black;
+}
+
+ul li{
+  display: inline-block;
+  padding: 14px 16px;
+}
+
+.desk{
+  display: none;
+}
+
+.right{
+  float: right;
+  background-color: purple;
+  margin-top: 10px;
+}
+
+#main,
+#one-song,
+#reach{
+  background-size: cover;
+  background-position: center;
+  min-height: 150vh;
+}
+
+footer{
+  background-color: black;
+  color: white;
+}
+
+.pillbutton{
+  width: 200px;
+  background-color:black;
+  padding: 14px;
+  border: 3px solid white;
+  margin: 0 auto;
+  margin-top: 30px;
+  font-weight: bold;
+  border-radius: 24px;
+}
+
+.main-pill{
+	opacity: 0.7;
+}
+
+.purple-pill{
+  width: 200px;
+  background-color:transparent;
+  padding: 14px;
+  border: 3px solid purple;
+  margin: 0 auto;
+  margin-top: 30px;
+  font-weight: bold;
+  border-radius: 24px;
+	color: purple;
+}
+
+.distribute-pic{
+	margin-top: 7%;
+}
+
+.pillbutton:hover{
+  background-color: black;
+  opacity: 0.8;
+}
+
+.purple-pill:hover{
+  background-color: purple;
+	color: white;
+  opacity: 0.8;
+}
+
+.pill-clear{
+  background-color: transparent;
+  width: 200px;
+}
+
+.power-flex{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5%;
+}
+
+.flex-left,
+.flex-right{
+  width: 100%;
+}
+
+.artist-grid{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 0px;
+	grid-auto-rows: minmax(200px, auto);
+	margin-top: 10%;
+ }
+
+ .artist{
+		background-size: cover;
+		background-position: center;
+ }
+
+ .five,
+ .six,
+ .seven,
+ .eight{
+	 display: none;
+ }
+
+ .flex-song{
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: space-between;
+	 color: white;
+ }
+
+ .song-box{
+	 width: 100%;
+	 font-size: 1.5em;
+ }
+
+ #song-btm{
+	 background-color:rgba(255, 0, 255, 0.5);
+	 height: 53%;
+ }
+
+ #song-top{
+	 margin: 0 auto;
+	 width: 95%;
+	 padding-top: 7%;
+ }
+
+ .flex-masters-top,
+ .flex-masters-btm{
+	 display: flex;
+	 justify-content: space-between;
+	 flex-direction: column;
+	 margin-top: 5%;
+ }
+
+ .masters{
+	 width: 100%;
+	 font-size: 1.4em;
+ }
+
+ .masters-img{
+	 width: 60%;
+	 margin: 0 auto;
+ }
+
+ #masters{
+	 text-align:center;
+ }
+
+ .reach-flex{
+	 display: flex;
+	 flex-direction: column;
+	 color: white;
+	 justify-content: space-between;
+	 padding-bottom: 5%;
+ }
+
+ .reach-cont{
+	 width: 100%;
+	 font-size: 1.4em;
+ }
+
+ #contact-body,
+ #work-body{
+	 background-size: cover;
+ }
+
+ .work-grid{
+	 width: 100%;
+	 display: grid;
+ 	grid-template-columns: repeat(4, 1fr);
+ 	grid-gap: 1px;
+ 	grid-auto-rows: minmax(200px, auto);
+ 	margin-top: 10%;
+ }
+
+ .work{
+
+	 background-size: cover;
+	 background-position: center;
+ }
+
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+.container{
+  width: 95%;
+  margin: 0 auto;
+}
+
+#main{
+  height: 110vh;
+}
+
+/* ---- Layout Containers ---- */
+
+/* =================================
+  Media Queries
+==================================== */
+
+@media (min-width: 789px) {
+
+  .container{
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .mob{
+    display: none;
+  }
+
+  .desk{
+    display: inline-block;
+  }
+
+  header{
+    background-color: transparent;
+  }
+
+  #main{
+    margin-top: -75px;
+  }
+
+  .main_title{
+    margin-left: 20px;
+  }
+
+  #second-heading{
+    font-weight: 200;
+  }
+
+  .power-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5%;
+  }
+
+  .flex-left,
+  .flex-right{
+    width: 40%;
+  }
+
+  .artist-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    grid-auto-rows: minmax(200px, auto);
+    margin-top: 10%;
+   }
+
+	 #main,
+	 #one-song,
+	 #reach{
+	   background-size: cover;
+	   background-position: center;
+	   min-height: 120vh;
+	 }
+
+  #song-btm{
+    background-color:rgba(255, 0, 255, 0.5);
+    height: 53%;
+  }
+
+  .flex-song{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+  }
+
+  .song-box{
+    width: 40%;
+    font-size: 1.5em;
+  }
+
+	#song-top{
+		width: 70%;
+		margin-left: 10%;
+	}
+
+  #one-song{
+    height: 145vh;
+  }
+
+
+  .flex-masters-top,
+  .flex-masters-btm{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 5%;
+  }
+
+  .masters{
+    width: 40%;
+    font-size: 1.4em;
+  }
+
+  .masters-img{
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .reach-title{
+    width: 70%;
+    padding-top: 5%;
+  }
+
+  .reach-flex{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: space-between;
+    padding-bottom: 5%;
+  }
+
+  .reach-cont{
+    width: 40%;
+    font-size: 1.4em;
+  }
+
+  .reach-btn{
+    padding-top: 7%;
+  }
+
+  #footer-img{
+    width: 40%;
+    margin-left: 15%;
+  }
+
+  .rightf{
+    float: right;
+  }
+
+
+}
